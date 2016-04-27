@@ -1,0 +1,9 @@
+<html>
+  <body>
+     {% for car,picture in predicted %}
+        <a href = {{ car }}>
+          <img src={{ picture }} alt="car" style="width:300px;height:225px;">
+        </a>
+     {% endfor %}
+  </body>
+</html>
