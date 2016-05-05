@@ -1,12 +1,10 @@
-**Summary**
+## **Summary**
 SimilarCarFinder is a Computer Vision based application aimed to help users purchase their next car based on how the car looks. It allows users to better explore a variety of the cars that might be interesting to him. Behind the scenes, the Web App uses a Neural Network engine to find cars on Craigslist that looks similar to an image provided by the user.
 
-**Data**
+## **Data**
 I've built an Application to help users to improve the quality of their search on websites that sell cars. For this purpose I scraped the data from Craigslist. Scraper gets the information from the basic search page, stores URLs for each car page and then scrapes information particularly for every car. 
 
-**Process Flow**
-
-![Pipeline]({{site.baseurl}}//pipeline.tiff)
+## **Process Flow**
 
 After scraping the images of the cars, I preprocess all of them (reshape) and pass to the Neural Network.
 I use convolutional neural network (VGG-CNN) pretrained on ImageNet dataset. I drop the last layer of the original net to use the output as features.
