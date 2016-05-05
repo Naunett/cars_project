@@ -17,4 +17,4 @@ After that I created two variants of the algorthm to compare user's car to the c
 
 I created web-interface using StartBootstrap and Flask. The user can submit the URL to an image of the car he likes and can see the options for the cars he can buy from Craigslist.
 
-* readme will be expanded *
+*readme will be expanded*
