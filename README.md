@@ -9,7 +9,8 @@ An app can be adjusted to work with any website that sell cars, but I worked onl
 My scraper gets the information from the basic search page, stores URLs for each car page and then scrapes information particularly for every car (I wanted to use all the images for every car listing and I was able to get this information only for individual car pages). I needed to use some tricks with regular epressions to get the right links to the cars images. All the scraped information is stored in **Pandas** dataframe, including links to photos. I do not store images on the drive for this purpose. 
 
 ## **Process Flow**
-![]({{site.baseurl}}//1_pipeline.tiff)
+
+![]({{site.baseurl}}/https://www.dropbox.com/s/f4kmqvmo90d9og5/1_pipeline.tiff?dl=0)
 After scraping the images of the cars, I preprocess all of them (reshape) and pass to the Neural Network.
 I use convolutional neural network (VGG-CNN) pretrained on ImageNet dataset. I drop the last layer of the original net to use the output as features.
 For implementation I use package Lasagne and nolearn class. All the computation are being runned on AWS EC2. 
