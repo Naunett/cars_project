@@ -5,8 +5,8 @@ SimilarCarFinder is a Computer Vision based application aimed to help users purc
 About a year ago I was looking for a new car. Craigslist has lots of awesome deals, but it is extremely hard to do search on it! Often the description doesn't correspond to the search query at all. So, if in real life finding a car that looks like you want is not a problem – you see all of them right away at any car dealership, this is not the case for online search. And I decided to create an app that would help me to filter cars based on the photo of the car. 
 
 ## **Data**
-An app can be adjusted to work with any website that sell cars, but I worked only with Craigslist's data. For this purpose I scraped the data from Craigslist, using Python libraries **BeautifulSoup**, **requests** and **urllib**. 
-My scraper gets the information from the basic search page, stores URLs for each car page and then scrapes information particularly for every car (I wanted to use all the images for every car listing and I was able to get this information only for individual car pages). I needed to use some tricks with regular epressions to get the right links to the cars images. All the scraped information is stored in **Pandas** dataframe, including links to photos. I do not store images on the drive for this purpose. 
+An app can be adjusted to work with any website that sell cars, but I worked only with Craigslist's data. For this purpose I scraped the data from Craigslist, using Python libraries **BeautifulSoup**, **requests** and **urllib**. </br>
+My scraper gets the information from the basic search page, stores URLs for each car page and then scrapes information particularly for every car (I wanted to use all the images for every car listing and I was able to get this information only from individual car pages). I needed to use some tricks with regular epressions to get the right links to the cars images. All the scraped information is stored in **Pandas** dataframe, including links to photos. 
 
 ## **Process Flow**
 
