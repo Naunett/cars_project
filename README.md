@@ -10,7 +10,7 @@ My scraper gets the information from the basic search page, stores URLs for each
 
 ## **Process Flow**
 
-<img src="https://github.com/Naunett/cars_project/blob/master/img/1_pipeline.png" style = "width:30%; height:30%" />
+<img src="https://github.com/Naunett/cars_project/blob/master/img/1_pipeline.png" width =30%; height=30% />
 After scraping the images of the cars, I preprocess all of them (reshape) and pass to the Neural Network.
 I use convolutional neural network (VGG-CNN) pretrained on ImageNet dataset. I drop the last layer of the original net to use the output as features.
 For implementation I use package Lasagne and nolearn class. All the computation are being runned on AWS EC2. 
