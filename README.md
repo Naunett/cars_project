@@ -1,10 +1,10 @@
 ## **Summary**
 SimilarCarFinder is a Computer Vision based application aimed to help users purchase their next car based on how the car looks. It allows users to better explore a variety of the cars that might be interesting to him. Behind the scenes, the Web App uses a Neural Network engine to find cars on Craigslist that looks similar to an image provided by the user.
 
-## **What is the motivation?**
+## **Motivation**
 About a year ago I was looking for a new car. Craigslist has lots of awesome deals, but it is extremely hard to do search on it! Often the description doesn't correspond to the search query at all. So, if in real life finding a car that looks like you want is not a problem – you see all of them right away at any car dealership, this is not the case for online search. And I decided to create an app that would help me to filter cars based on the photo of the car. 
 
-## **Getting the Data**
+## **Data**
 An app can be adjusted to work with any website that sell cars, but I worked only with Craigslist's data. For this purpose I scraped the data from Craigslist, using Python libraries **BeautifulSoup**, **requests** and **urllib**. </br>
 My scraper gets the information from the basic search page, stores URLs for each car page and then scrapes information particularly for every car (I wanted to use all the images for every car listing and I was able to get this information only from individual car pages). I needed to use some tricks with regular epressions to get the right links to the cars images. All the scraped information is stored in **Pandas** dataframe, including links to photos. 
 
@@ -31,7 +31,13 @@ After that I created two variants of the algorthm to compare user's car to the c
 ### Web application
 
 I created web-interface using **StartBootstrap** and **Flask**. 
+<img src="https://github.com/Naunett/cars_project/blob/master/img/3_search_page.png" width =70%; height=70% /> </br>
 
-The user can submit the URL to an image of the car he likes and can see the options for the cars he can buy from Craigslist, with links.
+The user can submit the URL to an image of the car he likes and can see the options for the cars he can buy from Craigslist, with links. 
+Even if the car looks very specific, application can find cars that look alike.
+<img src="https://github.com/Naunett/cars_project/blob/master/img/5_truck_example.png" width =70%; height=70% /> </br>
+
+
+
 
 
